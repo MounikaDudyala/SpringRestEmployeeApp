@@ -49,7 +49,7 @@ public class EmployeeController {
 			return new ResponseEntity<Void>(HttpStatus.CONFLICT);
 		}
 		employeeService.createEmployee(employee);
-		HttpHeaders headers = new HttpHeaders();		
+		HttpHeaders headers = new HttpHeaders();
 		headers.setLocation(ucBuilder.path("/employee/{id}").buildAndExpand(employee.getEmployeeId()).toUri());
 		return new ResponseEntity<Void>(headers, HttpStatus.CREATED);
 	}
