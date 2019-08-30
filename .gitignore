@@ -4,7 +4,7 @@
 .classpath
 gradlew
 gradlew.bat
-settings.gradle
+settings.gradle/
 .project
 bin/
 tmp/
