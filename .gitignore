@@ -4,7 +4,11 @@
 .classpath
 gradlew
 gradlew.bat
-settings.grade
+settings.gradle
 .project
+bin/
+tmp/
+/target/
+.idea
 # Ignore Gradle build output directory
 build
